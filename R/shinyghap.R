@@ -70,23 +70,20 @@ get_study_n<-function(current_query){
 #' @return nothing
 #' @details DETAILS
 #' @examples 
-#' \dontrun{
 #' if(interactive()){
-#'  searchbuilder()
+#'  use_ghap()
 #'  }
-#' }
-#' @rdname searchbuilder
+#' @rdname use_ghap
 #' @export 
 #' @import dplyr
 #' @importFrom jsonlite fromJSON
 #' @importFrom jsTree renderJsTree jsTree jsTreeOutput
 #' @importFrom miniUI miniPage gadgetTitleBar miniTitleBarButton miniContentPanel
 #' @importFrom reshape2 dcast
-# @importFrom DT dataTableOutput renderDataTable datatable
 #' @import shiny
 #' @importFrom vcs ls_remote diff_head
 #' @importFrom ghap use_study get_git_base_path
-searchbuilder <- function(viewer = shiny::dialogViewer(dialogName = 'GHAP',width = 3000,height = 2000)){
+use_ghap <- function(viewer = shiny::dialogViewer(dialogName = 'GHAP',width = 3000,height = 2000)){
   
   MYDIR <- file.path(tempdir(),'mydir')
   
@@ -102,7 +99,7 @@ searchbuilder <- function(viewer = shiny::dialogViewer(dialogName = 'GHAP',width
   
   ui <- miniUI::miniPage(
     
-    miniUI::gadgetTitleBar('GHAP Search Builder',
+    miniUI::gadgetTitleBar('Search and Maintain GHAP Repositories',
                            left = miniUI::miniTitleBarButton(inputId = "qt","Quit",primary = TRUE),
                            right=NULL),
     

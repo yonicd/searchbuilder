@@ -1,4 +1,4 @@
-Name: searchbuilder
+Name: use_ghap
 Description: Search and Maintain GHAP repositories
-Binding: searchbuilder
+Binding: use_ghap
 Interactive: true

@@ -1,5 +1,5 @@
-Package: searchbuilder
-Title: Shinyapp for searching and interacting in GHAP repositories
+Package: shinyghap
+Title: Shinyapp for searching and interacting with GHAP repositories
 Version: 0.0.1
 Authors@R: person("Jonathan", "Sidi", email = "yonis@metrumrg.com", role = c("aut", "cre"))
 Description: Shinyapp for working in GHAP. Not a useful package for the general public.
