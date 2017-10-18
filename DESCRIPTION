@@ -14,3 +14,4 @@ Suggests:
 RoxygenNote: 6.0.1
 Remotes: 
     yonicd/ghap
+    metrumresearchgroup/vcs
